@@ -37,17 +37,44 @@ nav a:hover{
 }
 
 /* social menu base styles */
-
+a.tw{
+  background-image: url(img/tw.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+a.fb{
+  background-image: url(img/fb.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  
+}
+.social a{
+  text-indent: -10000px;
+  min-width:10px;
+  max-width: 10px;
+  margin: 0px auto;
+}
+.social{
+  display:flex;
+  justify-content: center;
+}
 /* flex styles */
 
 @media screen and (min-width: 768px){
-
+nav{
+  display: flex;
+  justify-content:space-between;
+}
 nav ul{
   display: flex;
 }
 
 nav li{
   flex: 1 1 0;
+}
+.social{
 }
     
 } /* end media 768 */
